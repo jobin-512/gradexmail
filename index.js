@@ -46,8 +46,8 @@ app.post('/',(req, res) => {
 
 async function main(email,name,company,address,info, city,service) {
   const info1 = await transporter.sendMail({
-    from: '"Enquirey Form" <jobin.sks@gmail.com>', // sender address
-    to: "jobin.sks@gmail.com", // list of receivers
+    from: '"Enquirey Form"', // sender address
+    to: "operations@gradexcommercial.com.au", // list of receivers
     subject: "Enquirey", // Subject line
     html: `
     <p>Enquirey Form Details</p>
